@@ -327,65 +327,51 @@
 </script>
 
 <style>
-    .copy-button {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #2d96bd;
-        color: #fff;
-        border: none;
-        border-radius: 10%;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
+.copy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #b8c6db, #f0f4f7);
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;  /* 更加优雅的字体 */
+    font-weight: 500;
+    text-transform: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.copy-button:hover {
+    background: linear-gradient(135deg, #f0f4f7, #b8c6db);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.copy-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.copy-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(116, 170, 255, 0.5);
+}
+
+/* 引入 Poppins 字体 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+    
 </style>
 
 
 
 
 
-  
-    <div id="gitalk-container"></div>  
-    <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 
-<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<script src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
-
-<div id="gitalk-container"></div>
-
-<script type="text/javascript">
-
- var gitalk = new Gitalk({
-
- clientID: 'Ov23liddKHvDleRytz03',
-
- clientSecret: 'a41d78ad15144e82976c831beadda2276ddd7c4d',
-
- repo: 'leanty.github.io',
-
- owner: 'leanty',
-
- admin: 'leanty',
-
- id: md5(location.pathname), 
-
- labels: 'Gitalk'.split(',').filter(l => l),
-
- perPage: 10,
-
- pagerDirection: 'last',
-
- createIssueManually: true,
-
- distractionFreeMode: false
-
- })
-
- gitalk.render('gitalk-container')
-
-</script>  
-   
 
   
             </div>
@@ -398,34 +384,6 @@
     |
    
     <!-- 访客数量 -->
-   
-    
-   
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-<span class="site-uv">
-
- 总访客量:
-
- <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
-
-</span>&nbsp;
-
-
-
-
-
-<span class="site-pv">
-
- | 总访问量:
-
- <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
-
-</span>
-
-
    
     
    
