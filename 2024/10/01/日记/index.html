@@ -369,7 +369,7 @@
         codeBlocks.forEach(function (codeBlock) {
             var copyButton = document.createElement('button');
             copyButton.className = 'copy-button';
-            copyButton.innerText = 'Copy';
+            copyButton.innerText = '📋复制代码';
 
             // Check if the code block is in the article content
             if (codeBlock.closest('article')) {
@@ -382,10 +382,10 @@
                     if (!isCopying) {
                         var codeText = codeBlock.innerText;
                         navigator.clipboard.writeText(codeText).then(function () {
-                            copyButton.innerText = 'Copied!';
+                            copyButton.innerText = '✅已复制!';
                             isCopying = true;
                             setTimeout(function () {
-                                copyButton.innerText = 'Copy';
+                                copyButton.innerText = '📋复制代码';
                                 isCopying = false;
                             }, 1500);
                         }).catch(function (err) {
@@ -401,7 +401,7 @@
 <style>
     .copy-button {
         position: absolute;
-        top: 10px;  /* 距离顶部 10px */
+        top: 10px; /* 距离顶部 10px */
         right: 10px; /* 距离右边 10px */
         padding: 8px 16px;
         font-size: 14px;
@@ -409,11 +409,31 @@
         cursor: pointer;
         border: 1px solid #ccc;
         border-radius: 4px;
-        background-color: #f0f0f0;
-      }
-      .copy-button:hover {
-        background-color: #e0e0e0;
-      }
+        background-color: #f9f9f9; /* 改为稍微亮一点的背景色 */
+        color: #333; /* 提高文字对比度 */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
+        transition: all 0.3s ease; /* 添加平滑过渡效果 */
+    }
+    
+    .copy-button:hover {
+        background-color: #e6e6e6; /* 改为更明显的悬停背景色 */
+        color: #000; /* 提高悬停时的对比度 */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* 增强阴影效果 */
+        transform: translateY(-2px); /* 鼠标悬停时略微上移 */
+    }
+    
+    .copy-button:active {
+        background-color: #dcdcdc; /* 按下时的背景色 */
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset; /* 内阴影，按压感更强 */
+        transform: translateY(0); /* 恢复到原位置 */
+    }
+    
+    .copy-icon {
+        margin-right: 5px; /* 图标与文字的间距 */
+        font-size: 16px; /* 图标大小 */
+        vertical-align: middle; /* 图标与文字居中对齐 */
+    }
+    
 </style>
 
 
