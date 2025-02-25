@@ -13,7 +13,7 @@
 
 
 
-<title>杂项 | blog</title>
+<title>影评 | blog</title>
 
 
 
@@ -164,11 +164,76 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">全部展开</a>
+        <a onclick="go_top()">回到顶部</a>
+        <a onclick="go_bottom()">回到底部</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? '全部展开' : '全部折叠';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">杂项</h1>
+            <h1 class="post-title">影评</h1>
             
                 <div class="post-meta">
                     <!-- 
@@ -177,7 +242,7 @@
 
                     
                         <span class="post-time">
-                           <a>May 14, 2024&nbsp;&nbsp;16:05:23</a>
+                           <a>February 25, 2025&nbsp;&nbsp;19:12:25</a>
                         </span>
                     
 
@@ -191,7 +256,7 @@
                         
                         字数: 
                         
-                        <a href="">3</a> 
+                        <a href="">238</a> 
                         
                         </span> -->
                         
@@ -218,15 +283,13 @@
         </header>
 
         <div class="post-content">
-            <p>Abel’s lemma</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-\sum_{k=1}^n a_k b_k &= a_1 b_1 + \sum_{k=2}^n a_k b_k \\
-&= a_1 B_1 + \sum_{k=2}^n a_k (B_k - B_{k-1}) \\
-&= a_1 B_1 + \sum_{k=2}^n a_k B_k - \sum_{k=2}^n a_k B_{k-1} \\
-&= \sum_{k=1}^{n-1} a_k B_k + a_n B_n - \sum_{k=1}^{n-1} a_{k+1} B_k \\
-&= \sum_{k=1}^{n-1} (a_k - a_{k+1}) B_k + a_n B_n
-\end{aligned}</script>
+            <h1 id="section">2025</h1>
+<h3 id="section-1">2.25</h3>
+<h4 id="梁祝">《梁祝》</h4>
+<p>要理解《梁祝》，需了解东晋的门阀士族制度。那个时代与后世不同，贵族如谢安、王羲之等名留青史，但背后是阶级固化的残酷。寒门指低级贵族，平民则如草芥，毫无地位。科举未兴，权力被世家垄断。</p>
+<p>这一悲剧的终结有两大关键：一是唐高宗李治和武则天推行科举，打破世家垄断，寒门子弟得以崛起；二是宋代经济繁荣与活字印刷普及，知识不再被贵族独占，门阀制度逐渐消亡。若在唐后，梁山伯或能金榜题名，与祝英台美满相守，可惜他们生不逢时。</p>
+<p>东晋有好清谈，轻实务的风气，现实中的东晋，寒门子弟的上升通道几乎被完全堵死，清谈名士的风流背后，是无数人被埋没的无奈。</p>
+
         </div>
 
         
@@ -240,7 +303,7 @@
                 <!-- 
                     <p class="copyright-item">
                         <span>🗺️当前这篇博文地址：</span>
-                        <span><a href="https://leanty.github.io/2024/05/14/Notes/">https://leanty.github.io/2024/05/14/Notes/</a></span>
+                        <span><a href="https://leanty.github.io/2025/02/25/%E5%BD%B1%E8%AF%84/">https://leanty.github.io/2025/02/25/%E5%BD%B1%E8%AF%84/</a></span>
                     </p>
                  -->
                 
@@ -265,10 +328,6 @@
                 <!-- <span>🔖标签:</span> -->
                 <span class="tag">
                     
-                    
-                        <a href="/tags/Math/"> 🔖Math</a>
-                    
-                        
                 </span>
             </div>
             <div>
@@ -279,8 +338,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2024/06/03/Assignment/">pdf</a>
             
+            <a class="next" rel="next" href="/2024/10/01/%E6%97%A5%E8%AE%B0/">日寄</a>
             
         </section>
 
