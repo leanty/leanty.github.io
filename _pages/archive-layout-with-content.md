@@ -1,145 +1,145 @@
 ---
-title: "Archive Layout with Content"
+title: "带内容的归档布局示例"
 layout: archive
 permalink: /archive-layout-with-content/
 ---
 
-A variety of common markup showing how the theme styles them.
+展示主题样式的常见标记示例。
 
-# Header one
+# 一级标题
 
-## Header two
+## 二级标题
 
-### Header three
+### 三级标题
 
-#### Header four
+#### 四级标题
 
-##### Header five
+##### 五级标题
 
-###### Header six
+###### 六级标题
 
-## Blockquotes
+## 引用块
 
-Single line blockquote:
+单行引用：
 
-> Quotes are cool.
+> 引用很酷。
 
-## Tables
+## 表格
 
-| Entry            | Item   |                                                              |
+| 条目            | 项目   |                                                              |
 | --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
+| [张三](#)    | 2016   | 列表中项目的描述                          |
+| [李四](#)    | 2019   | 列表中项目的描述                          |
+| [王五](#)     | 2022   | 列表中项目的描述                          |
 
-| Header1 | Header2 | Header3 |
+| 表头1 | 表头2 | 表头3 |
 |:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
+| 单元格1   | 单元格2   | 单元格3   |
+| 单元格4   | 单元格5   | 单元格6   |
 |-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
+| 单元格1   | 单元格2   | 单元格3   |
+| 单元格4   | 单元格5   | 单元格6   |
 |=============================|
-| Foot1   | Foot2   | Foot3   |
+| 脚注1   | 脚注2   | 脚注3   |
 
-## Definition Lists
+## 定义列表
 
-Definition List Title
-:   Definition list division.
+定义列表标题
+:   定义列表内容。
 
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
+初创公司
+:   初创公司是指为寻找可复制和可扩展商业模式而设立的公司或临时组织。
 
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
+#努力工作
+:   由 Rob Dyrdek 和他的保镖 Christopher "Big Black" Boykins 创造，"Do Work" 是一种自我激励，也可以激励朋友。
 
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+现场操作
+:   让 Bill O'Reilly [来解释](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live")。
 
-## Unordered Lists (Nested)
+## 无序列表（嵌套）
 
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
+  * 列表项一 
+      * 列表项一 
+          * 列表项一
+          * 列表项二
+          * 列表项三
+          * 列表项四
+      * 列表项二
+      * 列表项三
+      * 列表项四
+  * 列表项二
+  * 列表项三
+  * 列表项四
 
-## Ordered List (Nested)
+## 有序列表（嵌套）
 
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
+  1. 列表项一 
+      1. 列表项一 
+          1. 列表项一
+          2. 列表项二
+          3. 列表项三
+          4. 列表项四
+      2. 列表项二
+      3. 列表项三
+      4. 列表项四
+  2. 列表项二
+  3. 列表项三
+  4. 列表项四
 
-## Buttons
+## 按钮
 
-Make any link standout more when applying the `.btn` class.
+为链接添加 `.btn` 类可突出显示。
 
-## Notices
+## 提示
 
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+**注意！** 你也可以在段落后加 `{: .notice}` 来添加提示。
 {: .notice}
 
-## HTML Tags
+## HTML 标签
 
-### Address Tag
+### 地址标签
 
 <address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
+  1 Infinite Loop<br /> Cupertino, CA 95014<br /> 美国
 </address>
 
-### Anchor Tag (aka. Link)
+### 链接标签
 
-This is an example of a [link](http://github.com "GitHub").
+这是一个 [链接](http://github.com "GitHub") 示例。
 
-### Abbreviation Tag
+### 缩写标签
 
-The abbreviation CSS stands for "Cascading Style Sheets".
+缩写 CSS 代表 "层叠样式表"。
 
-*[CSS]: Cascading Style Sheets
+*[CSS]: 层叠样式表
 
-### Cite Tag
+### 引用标签
 
-"Code is poetry." ---<cite>Automattic</cite>
+"代码即诗。" ---<cite>Automattic</cite>
 
-### Code Tag
+### 代码标签
 
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
+你将在后续测试中学到 `word-wrap: break-word;` 会是你的好朋友。
 
-### Strike Tag
+### 删除线标签
 
-This tag will let you <strike>strikeout text</strike>.
+这个标签可以让你 <strike>删除文本</strike>。
 
-### Emphasize Tag
+### 强调标签
 
-The emphasize tag should _italicize_ text.
+强调标签会让文本 _斜体_。
 
-### Insert Tag
+### 插入标签
 
-This tag should denote <ins>inserted</ins> text.
+这个标签表示 <ins>插入的</ins> 文本。
 
-### Keyboard Tag
+### 键盘标签
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+这个标签模拟 <kbd>键盘文本</kbd>，通常样式与 `<code>` 标签类似。
 
-### Preformatted Tag
+### 预格式化标签
 
-This tag styles large blocks of code.
+这个标签用于大段代码。
 
 <pre>
 .post-title {
@@ -147,29 +147,29 @@ This tag styles large blocks of code.
   font-weight: bold;
   font-size: 38px;
   line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+  这里有一行很长很长很长的文本，用于测试 PRE 标签的显示和溢出效果；
 }
 </pre>
 
-### Quote Tag
+### 短引用标签
 
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
+<q>开发者，开发者，开发者&#8230;</q> &#8211;Steve Ballmer
 
-### Strong Tag
+### 粗体标签
 
-This tag shows **bold text**.
+这个标签显示 **加粗文本**。
 
-### Subscript Tag
+### 下标标签
 
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+科学时间到：H<sub>2</sub>O，数字 "2" 应该下移。
 
-### Superscript Tag
+### 上标标签
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+继续科学：牛顿的 E = MC<sup>2</sup>，数字 2 应该上移。
 
-### Variable Tag
+### 变量标签
 
-This allows you to denote <var>variables</var>.
+用于表示 <var>变量</var>。
 
 {% include base_path %}
 {% for post in site.pages %}

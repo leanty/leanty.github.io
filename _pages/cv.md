@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,56 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+教育经历
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* 版本控制理论博士，GitHub 大学，2018（预计）
+* Jekyll 硕士，GitHub 大学，2014
+* GitHub 学士，GitHub 大学，2012
 
-Work experience
+工作经历
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2024年春：Academic Pages 合作者
+  * GitHub 大学
+  * 职责：模板更新与改进
+  * 导师：用户
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2015年秋：研究助理
+  * GitHub 大学
+  * 职责：合并 pull request
+  * 导师：Hub 教授
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2015年夏：研究助理
+  * GitHub 大学
+  * 职责：标签管理
+  * 导师：Git 教授
   
-Skills
+技能
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 技能1
+* 技能2
+  * 子技能2.1
+  * 子技能2.2
+  * 子技能2.3
+* 技能3
 
-Publications
+发表成果
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+演讲
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
-Teaching
+教学
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+服务与领导力
 ======
-* Currently signed in to 43 different slack teams
+* 当前已登录 43 个不同的 Slack 团队
