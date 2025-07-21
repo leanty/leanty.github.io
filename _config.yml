@@ -1,92 +1,84 @@
-# Site-wide settings
+# 站点全局设置
 # ------------------
 #
-title: Your awesome title
+title: leanty's site
 
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: leanty
+  email: leanty@gmail.com
 
-# The `>` after `description:` means to ignore line-breaks until next key. If
-#   you wish to omit the line-break after the end of text, use `>-` instead.
+# `>` 表示 description: 后的内容会忽略换行，直到下一个键。
+#   如果你想省略文本末尾的换行，用 `>-`。
 description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  This is leanty's site.
 
-
-# Build settings
+# 构建设置
 # --------------
 #
-# If you wish to use the gem-version of Minima with or without a Gemfile, use
-#   the following setting:
+# 如果你想用 Gemfile 或不用 Gemfile 方式使用 Minima 的 gem 版本，使用如下设置：
 theme: minima
 #
-# **OR** if you wish to use the theme directly from the GitHub repository by
-#   bypassing a Gemfile, use the following setting instead.
-#   It is best that you lock to a particular commit and update if uptream changes
-#   do not affect your site adversely.
+# **或者** 如果你想直接从 GitHub 仓库使用主题（跳过 Gemfile），用如下设置。
+#   最好锁定到某个 commit，如果上游变动不影响你的网站再更新。
 # remote_theme: jekyll/minima@d4d779a
 #
-# Minima requires the following plugins:
+# Minima 需要以下插件：
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
 #
-# Uncomment the following setting if you wish to disable deprecation warnings
-#   from newer versions of sass converter. Adapt as required.
+# 如果你想关闭 sass 转换器的新版本弃用警告，取消注释以下设置并按需调整。
 # sass:
 #   quiet_deps: true
 #   silence_deprecations: [import]
 
-
-# Minima-specific settings (applicable to Minima v3 and above only)
+# Minima 专用设置（仅适用于 Minima v3 及以上）
 # -----------------------------------------------------------------
 #
-#  *All described config keys below should be nested under the top-level
-#   `minima` key.*
+#  *下方所有配置项都应嵌套在顶层的 `minima` 键下*
 #
 minima:
-#   Minima skin selection. Available skins are:
-#     * classic            Default, light color scheme.
-#     * dark               Dark variant of the classic skin.
-#     * auto               Adaptive skin based on the classic and dark skins.
-#     * solarized-light    Light variant of solarized color scheme.
-#     * solarized-dark     Dark variant of solarized color scheme.
-#     * solarized          Adaptive skin for solarized color scheme skins.
-  skin: auto
-#
-#   Specific pages for site navigation.
-#     If you wish to link only specific pages in the site-navigation, use this
-#     and list the `path` property (as represented via Liquid) of the pages in
-#     the order they should be rendered.
-#   nav_pages:
-#     - about.md
-#
-#   Set to `true` to show excerpts on the homepage.
+  # Minima 皮肤选择。可用皮肤有：
+  #   * classic            默认，浅色配色方案。
+  #   * dark               经典皮肤的深色变体。
+  #   * auto               基于 classic 和 dark 的自适应皮肤。
+  #   * solarized-light    solarized 配色方案的浅色变体。
+  #   * solarized-dark     solarized 配色方案的深色变体。
+  #   * solarized          solarized 配色方案的自适应皮肤。
+  skin: solarized
+  #
+  #   站点导航的特定页面。
+  #     如果你只想在导航栏显示特定页面，使用此项并按顺序列出页面的 `path` 属性。
+  #   nav_pages:
+  #     - about.md
+  #
+  #   设置为 `true` 可在首页显示摘要。
   show_excerpts: false
-#
-#   Minima date format.
-#     The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
-#     Refer to https://shopify.github.io/liquid/filters/date/ for valid values
+  #
+  #   Minima 日期格式。
+  #     默认值为 "%b %d, %Y"（如 Nov 14, 2023）。
+  #     参考 https://shopify.github.io/liquid/filters/date/ 获取有效值
   date_format: "%b-%d-%Y"
-#
-  # Social Media Links.
-#     Renders icons via Font Awesome Free webfonts CDN, based on ordered list of
-#     entries. Valid entry keys:
-#       * title    Tooltip rendered on hovering over icon.
-#       * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
-#       * url      Full URL of social profile.
+  #
+  #   社交媒体链接。
+  #     通过 Font Awesome Free webfonts CDN 渲染图标，按顺序列出。
+  #     有效的 entry 键：
+  #       * title    鼠标悬停时显示的提示。
+  #       * icon     Font Awesome 图标 id。`github` 对应 `fa-github`。
+  #       * url      社交主页的完整 URL。
   social_links:
     - title: Minima Theme repository at GitHub
       icon: github
       url: "https://github.com/jekyll/minima"
-#     - title: Jekyll at X (formerly Twitter)
-#       icon: x-twitter
-#       url: "https://x.com/jekyllrb"
-#
-#   Hide syndication feed subscription link.
-#     RSS / Atom feed link is always rendered as the last item of social-links
-#     list. Set below key to `true` to not have the link to feed rendered as
-#     part of social-links list.
-#   hide_site_feed_link: false
+  #     - title: Jekyll at X (formerly Twitter)
+  #       icon: x-twitter
+  #       url: "https://x.com/jekyllrb"
+  #
+  #   隐藏订阅 feed 链接。
+  #     RSS / Atom feed 链接总是作为 social-links 列表的最后一项渲染。
+  #     设置为 true 可不在 social-links 列表中显示 feed 链接。
+  #   hide_site_feed_link: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
