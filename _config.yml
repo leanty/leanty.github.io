@@ -58,27 +58,15 @@ minima:
   #   Minima 日期格式。
   #     默认值为 "%b %d, %Y"（如 Nov 14, 2023）。
   #     参考 https://shopify.github.io/liquid/filters/date/ 获取有效值
-  date_format: "%b-%d-%Y"
-  #
-  #   社交媒体链接。
-  #     通过 Font Awesome Free webfonts CDN 渲染图标，按顺序列出。
-  #     有效的 entry 键：
-  #       * title    鼠标悬停时显示的提示。
-  #       * icon     Font Awesome 图标 id。`github` 对应 `fa-github`。
-  #       * url      社交主页的完整 URL。
+  date_format: "%b %d, %Y"
   social_links:
     - title: Minima Theme repository at GitHub
       icon: github
-      url: "https://github.com/jekyll/minima"
-  #     - title: Jekyll at X (formerly Twitter)
-  #       icon: x-twitter
-  #       url: "https://x.com/jekyllrb"
+      url: "https://github.com/leanty"
+
   #
   #   隐藏订阅 feed 链接。
   #     RSS / Atom feed 链接总是作为 social-links 列表的最后一项渲染。
   #     设置为 true 可不在 social-links 列表中显示 feed 链接。
   #   hide_site_feed_link: false
-markdown: kramdown
-kramdown:
-  input: GFM
-  math_engine: mathjax
+

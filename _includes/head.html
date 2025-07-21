@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link id="main-stylesheet" rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<!-- _math formula -->
+<!-- _数学公式 -->
 <script>
   window.MathJax = {
     tex: {
@@ -13,7 +13,11 @@
   };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-<!-- _math formula -->
+  <!-- _代码字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <!-- _中文字体 -->
+  <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" rel="stylesheet">
+
 
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}

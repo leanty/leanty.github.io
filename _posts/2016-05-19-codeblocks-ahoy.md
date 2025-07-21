@@ -133,3 +133,9 @@ author:
   </body>
 </html>
 {% endhighlight %}
+
+{% highlight python linenos%}
+def greet()
+  print("fku")
+greet()
+{% endhighlight %}
