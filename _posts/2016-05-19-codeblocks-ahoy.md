@@ -2,20 +2,20 @@
 layout: post
 ---
 
-An article with various blocks of highlighted code snippets.
+一篇包含各种高亮代码片段的文章。
 
 ```ruby
 =begin
-  Dummy class nested inside a dummy module
-  Private API
+  嵌套在一个虚拟模块中的虚拟类
+  私有API
 =end
 ```
 ```diff
-- This line is redacted
-- This line has been deleted
-+ This line is visible
-+ This line has been inserted
-This line has not been changed
+- 这一行已被删除
+- 这一行已被删除
++ 这一行可见
++ 这一行已被插入
+这一行没有被更改
 ```
 ```sass
 @import "base"
@@ -55,7 +55,7 @@ module Foo
       @layout = Layout.new
     end
 
-    # instance method
+    # 实例方法
     def profile
       measure_time do
         compile layout
@@ -67,7 +67,7 @@ module Foo
   end
 end
 
-# Execute code
+# 执行代码
 Foo::Bar.new.profile
 ```
 
@@ -90,10 +90,10 @@ author:
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Hello World</title>
+    <title>你好，世界</title>
   </head>
   <body>
-    <p>Hello, World!</p>
+    <p>你好，世界！</p>
   </body>
 </html>
 {% endhighlight %}
@@ -102,10 +102,10 @@ author:
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Hello World</title>
+    <title>你好，世界</title>
   </head>
   <body>
-    <p>Hello, World!</p>
+    <p>你好，世界！</p>
   </body>
 </html>
 {% endhighlight %}
@@ -114,10 +114,10 @@ author:
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Hello World</title>
+    <title>你好，世界</title>
   </head>
   <body>
-    <p>Hello, World!</p>
+    <p>你好，世界！</p>
   </body>
 </html>
 {% endhighlight %}
@@ -126,10 +126,10 @@ author:
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Hello World</title>
+    <title>你好，世界</title>
   </head>
   <body>
-    <p>Hello, World!</p>
+    <p>你好，世界！</p>
   </body>
 </html>
 {% endhighlight %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "This post demonstrates post content styles"
-categories: junk
+title: "本文演示了文章内容样式"
+categories: 杂项
 author:
 - Bart Simpson
 - Nelson Mandela Muntz
@@ -9,122 +9,115 @@ meta: "Springfield"
 modified_date: 2016-05-27
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+这是一篇用于演示文章内容样式的示例文章。
 
-## Some great heading (h2)
+## 很棒的标题 (h2)
 
-Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
+这是一个用于演示二级标题的段落。你可以在这里添加任何你想要的内容。
 
-Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Mauris lobortis nulla et felis ullamcorper bibendum。Phasellus et hendrerit mauris。Proin eget nibh a massa vestibulum pretium。Suspendisse eu nisl a ante aliquet bibendum quis a nunc。Praesent varius interdum vehicula。Aenean risus libero，placerat at vestibulum eget，ultricies eu enim。Praesent nulla tortor，malesuada adipiscing adipiscing sollicitudin，adipiscing eget est。
 
-## Another great heading (h2)
+## 另一个很棒的标题 (h2)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+这是另一个用于演示二级标题的段落。
 
-### Some great subheading (h3)
+### 很棒的小标题 (h3)
 
-Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum.
+这是一个用于演示三级标题的段落。
 
-Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
+Phasellus et hendrerit mauris。Proin eget nibh a massa vestibulum pretium。Suspendisse eu nisl a ante aliquet bibendum quis a nunc。
 
-### Some great subheading (h3)
+### 很棒的小标题 (h3)
 
-Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Praesent varius interdum vehicula。Aenean risus libero，placerat at vestibulum eget，ultricies eu enim。Praesent nulla tortor，malesuada adipiscing adipiscing sollicitudin，adipiscing eget est。
 
-> This quote will *change* your life. It will reveal the <i>secrets</i> of the universe, and all the wonders of humanity. Don't <em>misuse</em> it.
+> 这句名言会*改变*你的人生。它会揭示宇宙的<i>秘密</i>，以及人类的所有奇迹。不要<em>滥用</em>它。
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt.
+这是一个用于演示引用的段落。
 
-### Some great subheading (h3)
+### 很棒的小标题 (h3)
 
-Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum.
+Vestibulum lacus tortor，ultricies id dignissim ac，bibendum in velit。Proin convallis mi ac felis pharetra aliquam。Curabitur dignissim accumsan rutrum。
 
 ```html
 <html>
   <head>
   </head>
   <body>
-    <p>Hello, World!</p>
+    <p>你好，世界！</p>
   </body>
 </html>
 ```
 
+在这里你可以继续添加内容。
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+#### 你可能想要一个四级标题 (h4)
 
-#### You might want a sub-subheading (h4)
+这里是四级标题的内容。
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+#### 但这可能有点多余 (h4)
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+这里是另一个四级标题的内容。
 
-#### But it's probably overkill (h4)
+##### 这可以是更小的子标题，`pacman` (h5)
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+这里是五级标题的内容。
 
-##### Could be a smaller sub-heading, `pacman` (h5)
+###### 小而重要的子标题 (h6)
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+这里是六级标题的内容。
 
-###### Small yet significant sub-heading  (h6)
+### 哇哦，清单？
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+- [ ] 牛奶
+- [x] 饼干
+  - [x] 经典巧克力曲奇
+  - [x] 酸面团巧克力曲奇
+- [ ] 芝——士！！
 
-### Whaaat, a checklist??
+### 哇哦，无序列表！
 
-- [ ] Milk
-- [x] Cookies
-  - [x] Classic Choco-chip
-  - [x] Sourdough Choco-chip
-- [ ] Chee-ee-eeee-zzze!!!!
-
-### Oh hai, an unordered list!!
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-- First item, yo
-- Second item, dawg
-- Third item, what what?!
-- Fourth item, fo sheezy my neezy
-- Fifth item, nested!
-  - So la ti do
+- 第一项
+- 第二项
+- 第三项
+- 第四项
+- 第五项，嵌套！
+  - so la ti do
   - Ba-da-bing!
   - Ba-da-boom!
 
-### Oh hai, an ordered list!!
+### 哇哦，有序列表！
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-1. First item, yo
-2. Second item, dawg
-3. Third item, what what?!
-4. Fourth item, fo sheezy my neezy
-5. Fifth item, nested!
-  - So la ti do
+1. 第一项
+2. 第二项
+3. 第三项
+4. 第四项
+5. 第五项，嵌套！
+  - so la ti do
   - Ba-da-bing!
   - Ba-da-boom!
 
-## Headings are cool! (h2)
+## 标题很酷！(h2)
 
-Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Proin eget nibh a massa vestibulum pretium。Suspendisse eu nisl a ante aliquet bibendum quis a nunc。Praesent varius interdum vehicula。Aenean risus libero，placerat at vestibulum eget，ultricies eu enim。Praesent nulla tortor，malesuada adipiscing adipiscing sollicitudin，adipiscing eget est。
 
-Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Praesent nulla tortor，malesuada adipiscing adipiscing sollicitudin，adipiscing eget est。
 
-Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
+Proin eget nibh a massa vestibulum pretium。Suspendisse eu nisl a ante aliquet bibendum quis a nunc。
 
-### Tables
+### 表格
 
 Title 1               | Title 2               | Title 3               | Title 4
 --------------------- | --------------------- | --------------------- | ---------------------
-lorem                 | lorem ipsum           | lorem ipsum dolor     | lorem ipsum dolor sit
-lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
-lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
-lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit
+示例                  | 示例                  | 示例                  | 示例
+示例                  | 示例                  | 示例                  | 示例
+示例                  | 示例                  | 示例                  | 示例
+示例                  | 示例                  | 示例                  | 示例
 
 
 Title 1 | Title 2 | Title 3 | Title 4
 --- | --- | --- | ---
-lorem | lorem ipsum | lorem ipsum dolor | lorem ipsum dolor sit
-lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet | lorem ipsum dolor sit
-lorem ipsum dolor | lorem ipsum | lorem | lorem ipsum
-lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur
+示例 | 示例 | 示例 | 示例
+示例 | 示例 | 示例 | 示例
+示例 | 示例 | 示例 | 示例
+示例 | 示例 | 示例 | 示例
