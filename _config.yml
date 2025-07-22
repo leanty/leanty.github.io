@@ -45,7 +45,7 @@ minima:
   #   * solarized-light    solarized 配色方案的浅色变体。
   #   * solarized-dark     solarized 配色方案的深色变体。
   #   * solarized          solarized 配色方案的自适应皮肤。
-  skin: solarized
+  skin: my-skin
   #
   #   站点导航的特定页面。
   #     如果你只想在导航栏显示特定页面，使用此项并按顺序列出页面的 `path` 属性。
