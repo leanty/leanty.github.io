@@ -41,11 +41,11 @@ minima:
   # Minima 皮肤选择。可用皮肤有：
   #   * classic            默认，浅色配色方案。
   #   * dark               经典皮肤的深色变体。
-  #   * auto               基于 classic 和 dark 的自适应皮肤。
+  #   * a uto              基于 classic 和 dark 的自适应皮肤。
   #   * solarized-light    solarized 配色方案的浅色变体。
   #   * solarized-dark     solarized 配色方案的深色变体。
   #   * solarized          solarized 配色方案的自适应皮肤。
-  skin: my-skin
+  skin: auto
   #
   #   站点导航的特定页面。
   #     如果你只想在导航栏显示特定页面，使用此项并按顺序列出页面的 `path` 属性。
