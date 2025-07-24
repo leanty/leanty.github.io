@@ -29,7 +29,7 @@ def greet(name):
 
 **行号：**
 ```html
-{% highlight html %}
+{% highlight html lineos%}
 <html>
   <head>
     <meta charset="utf-8" />
@@ -42,7 +42,7 @@ def greet(name):
 {% endhighlight %}
 ```
 
-{% highlight html %}
+{% highlight html lineos%}
 <html>
   <head>
     <meta charset="utf-8" />
