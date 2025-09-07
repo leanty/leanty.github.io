@@ -1,0 +1,29 @@
+---
+layout: post
+author: liu
+comments: true
+---
+cs
+
+[CS336 Reproducing LLM from scratch](https://www.heywhale.com/mw/project/689709e023583639fc675b5c)
+
+[CMU deeplearning](http://deeplearning.cs.cmu.edu/)
+
+
+数学
+
+[complex analysis](https://zhangshenxing.github.io/teaching/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E4%B8%8E%E7%A7%AF%E5%88%86%E5%8F%98%E6%8D%A2/chapter/main.pdf)
+
+物理
+
+[PDF link](http://down.wlwkw.cn:8888/)
+
+## 娱乐
+
+#### 影视
+
+[moontv](https://moontv0.ctfedu.qzz.io/)
+
+[皮皮妖](https://www.pipiyao.cc/)
+
+[低端影视](https://ddys.pro/)
