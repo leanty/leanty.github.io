@@ -11,7 +11,7 @@ author:
 #   you wish to omit the line-break after the end of text, use `>-` instead.
 description: >
  记录一点东西
- 
+logo: ico.png
 math:
   enabled: true
   backend: mathjax
