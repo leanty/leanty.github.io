@@ -86,6 +86,9 @@ minima:
     - title: leanty
       icon: github
       url: "https://github.com/leanty"
+    - title: leanty
+      icon: bilibili
+      url: "https://bilibili.com"
 
 
 #   Hide syndication feed subscription link.
