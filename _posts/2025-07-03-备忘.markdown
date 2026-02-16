@@ -3,22 +3,6 @@ layout: post
 comments: true
 title: 备忘录
 ---
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions.
-
 ## cs
 
 [CS336 Reproducing LLM from scratch](https://www.heywhale.com/mw/project/689709e023583639fc675b5c)
