@@ -2,7 +2,7 @@
 title: Andrej Karpathy blog
 email: 
 description: "Musings of a Computer Scientist."
-# baseurl: "/blog"
+baseurl: ""
 url: "http://leanty.github.io"
 twitter_username: karpathy
 github_username:  karpathy
