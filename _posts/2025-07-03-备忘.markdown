@@ -1,11 +1,7 @@
 ---
+layout: post
+comments: true
 title: 备忘录
-publishDate: 2025-07-03
-updatedDate: 2025-07-10
-description: '收集一些资源'
-tags:
-  - 其它
-language: '中文'
 ---
 
 > [!NOTE]
