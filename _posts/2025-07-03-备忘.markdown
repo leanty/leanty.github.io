@@ -1,6 +1,7 @@
 ---
 layout: post
 comments: true
+excerpt: "记录一些资源"
 title: 备忘录
 ---
 ## cs
