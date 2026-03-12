@@ -1,4 +1,4 @@
 # My blog
 
-This is my [blog](http://leanty.github.io), uses [Jekyll](http://jekyllrb.com/). I was tired of bloated, slow Wordpress that locked up all my content.
+This is my [blog](http://leanty.github.io), uses [Jekyll](http://jekyllrb.com/).This site uses a template from karpathy
 
