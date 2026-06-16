@@ -1,0 +1,149 @@
+---
+layout: default
+title: 热榜
+includelink: true
+---
+
+<div class="home">
+  <h1>热门榜单</h1>
+
+  <div class="hot-tabs" id="hotTabs">
+    <button class="hot-tab active" data-key="wbHot">微博</button>
+    <button class="hot-tab" data-key="zhihuHot">知乎</button>
+    <button class="hot-tab" data-key="baiduHot">百度</button>
+    <button class="hot-tab" data-key="biliHot">B站</button>
+    <button class="hot-tab" data-key="douyinHot">抖音</button>
+    <button class="hot-tab" data-key="githubHot">GitHub</button>
+    <button class="hot-tab" data-key="hackernews">Hacker News</button>
+    <button class="hot-tab" data-key="v2exHot">V2EX</button>
+  </div>
+
+  <div id="hotList" class="hot-list-wrap">
+    <p class="loading">加载中...</p>
+  </div>
+</div>
+
+<style>
+.hot-tabs {
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.hot-tab {
+  padding: 6px 18px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #555;
+  transition: all 0.15s;
+}
+.hot-tab:hover {
+  border-color: #2a7ae2;
+  color: #2a7ae2;
+}
+.hot-tab.active {
+  background: #2a7ae2;
+  color: #fff;
+  border-color: #2a7ae2;
+}
+.hot-list-wrap .loading,
+.hot-list-wrap .error {
+  text-align: center;
+  padding: 60px 0;
+  color: #999;
+  font-size: 15px;
+}
+.hot-list-wrap .error {
+  color: #e74c3c;
+}
+.hot-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hot-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.hot-item:last-child {
+  border-bottom: none;
+}
+.hot-item .rank {
+  min-width: 26px;
+  font-weight: 600;
+  color: #bbb;
+  font-size: 14px;
+  text-align: center;
+}
+.hot-item .rank.r1 { color: #e84118; }
+.hot-item .rank.r2 { color: #e67e22; }
+.hot-item .rank.r3 { color: #f1c40f; }
+.hot-item a {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #333;
+}
+.hot-item a:hover {
+  color: #2a7ae2;
+}
+.hot-item .hot-desc {
+  font-size: 12px;
+  color: #aaa;
+  white-space: nowrap;
+}
+</style>
+
+<script>
+const API_BASE = 'https://api.vvhan.com/api/hotlist';
+
+const hotTabs = document.getElementById('hotTabs');
+const hotList = document.getElementById('hotList');
+
+async function load(key) {
+  hotList.innerHTML = '<p class="loading">加载中...</p>';
+  try {
+    const res = await fetch(`${API_BASE}/${key}`);
+    const json = await res.json();
+    render(json.data || []);
+  } catch {
+    hotList.innerHTML = '<p class="error">加载失败，请稍后重试</p>';
+  }
+}
+
+function render(data) {
+  if (!data || data.length === 0) {
+    hotList.innerHTML = '<p class="loading">暂无数据</p>';
+    return;
+  }
+  let html = '<ol class="hot-list">';
+  data.forEach((item, i) => {
+    const r = i + 1;
+    const rc = r <= 3 ? `rank r${r}` : 'rank';
+    const desc = item.hot ? `<span class="hot-desc">${item.hot}</span>` : '';
+    html += `<li class="hot-item">
+      <span class="${rc}">${r}</span>
+      <a href="${item.url || '#'}" target="_blank" rel="noopener">${item.title || item.name}</a>
+      ${desc}
+    </li>`;
+  });
+  html += '</ol>';
+  hotList.innerHTML = html;
+}
+
+hotTabs.addEventListener('click', e => {
+  const btn = e.target.closest('.hot-tab');
+  if (!btn) return;
+  hotTabs.querySelectorAll('.hot-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  load(btn.dataset.key);
+});
+
+load('wbHot');
+</script>
