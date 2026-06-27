@@ -1,0 +1,153 @@
+---
+layout: default
+title: 答案之书
+includelink: true
+---
+
+<div class="home answer-page">
+  <h1>答案之书</h1>
+  <p class="answer-subtitle">在心中默念你的问题，然后翻开答案</p>
+
+  <div class="answer-card">
+    <div class="answer-input-wrap">
+      <input type="text" id="questionInput" class="answer-input" placeholder="输入你的问题..." maxlength="100" autocomplete="off" />
+      <button id="askBtn" class="answer-btn">翻开答案</button>
+    </div>
+
+    <div id="answerBox" class="answer-box">
+      <div class="answer-placeholder">?</div>
+    </div>
+
+    <p class="answer-hint" id="hintText">输入问题，点击按钮获取答案</p>
+  </div>
+</div>
+
+<style>
+.answer-page {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.answer-page h1 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  margin-bottom: 5px;
+}
+.answer-subtitle {
+  color: #818181;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.answer-card {
+  border: 1px solid #e8e8e8;
+  padding: 30px;
+}
+.answer-input-wrap {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.answer-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #e8e8e8;
+  font-size: 15px;
+  outline: none;
+  font-weight: 300;
+  transition: border-color 0.2s;
+}
+.answer-input:focus {
+  border-color: #2a7ae2;
+}
+.answer-btn {
+  padding: 10px 22px;
+  background: #2a7ae2;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.answer-btn:hover {
+  background: #1a5fc7;
+}
+.answer-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.answer-box {
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.answer-placeholder {
+  font-size: 56px;
+  opacity: 0.15;
+}
+.answer-result {
+  font-size: 26px;
+  font-weight: 300;
+  color: #333;
+  padding: 16px;
+  line-height: 1.5;
+  letter-spacing: -.5px;
+  animation: fadeIn 0.4s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.answer-hint {
+  font-size: 13px;
+  color: #818181;
+  margin: 0;
+}
+</style>
+
+<script>
+const answers = [
+  "是的。", "不是。", "也许吧。", "再等等看。",
+  "别想了。", "放手去做。", "时机未到。", "相信自己。",
+  "再考虑一下。", "不可能。", "毫无疑问。", "好运将至。",
+  "耐心等待。", "随它去吧。", "勇敢一点。", "保持冷静。",
+  "前路光明。", "放下执念。", "值得一试。", "不要犹豫。",
+  "顺其自然。", "重新思考。", "机会渺茫。", "大胆前行。",
+  "听从内心。", "答案就在你心中。", "别急，慢慢来。",
+  "这是个好主意。", "现在还不是时候。", "相信你的直觉。",
+  "去做吧。", "忘了吧。", "坚持住。", "放弃吧。",
+  "抬头看看。", "回头再说。", "全力以赴。", "省省力气。",
+  "问问朋友。", "问问自己。", "明天再说。", "就现在。",
+];
+
+const input = document.getElementById('questionInput');
+const btn = document.getElementById('askBtn');
+const box = document.getElementById('answerBox');
+const hint = document.getElementById('hintText');
+
+function getAnswer() {
+  const q = input.value.trim();
+  if (!q) {
+    input.focus();
+    return;
+  }
+  btn.disabled = true;
+  hint.textContent = '翻开中...';
+
+  setTimeout(() => {
+    const idx = Math.floor(Math.random() * answers.length);
+    box.innerHTML = `<div class="answer-result">${answers[idx]}</div>`;
+    hint.textContent = `问题：${q}`;
+    btn.disabled = false;
+  }, 400);
+}
+
+btn.addEventListener('click', getAnswer);
+input.addEventListener('keydown', e => {
+  if (e.key === 'Enter') getAnswer();
+});
+</script>
